@@ -59,12 +59,12 @@
 
                         <div class="flex  flex-none gap-2">
                        
-                        <input type="text" placeholder="h" class="input input-bordered input-xs w-32 lg:w-24 max-w-xs" />
+                        <input type="text" id="first-field" placeholder="h" class="input input-bordered input-xs w-32 lg:w-24 max-w-xs" />
                         <p class="font-bold" > cm</p>
                     </div>
                       </div>
                       <div class="card-actions">
-                        <button class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
+                        <button id="btn-triangle" class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -77,7 +77,7 @@
                       <img src="./images/rectangle.png" alt="triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Triangle</h2>
+                      <h2 class="card-title" id="triangle">Triangle</h2>
                       <p>Area (A) = w <span><i class="fa-solid fa-xmark"></i></span>  I </p>
                       <div  class=" block md:flex mt-2 flex-none  gap-4 lg:flex flex-none gap-4 ">
                         <div class="flex  flex-none gap-2">
@@ -103,10 +103,11 @@
                       <img src="./images/parallelogram.png" alt="triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Parallelogram</h2>
-                      <p>Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> b <span><i class="fa-solid fa-xmark"></i></span> h</p>
+                      <h2 id="third-card-title" class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b <span><i class="fa-solid fa-xmark"></i></span> h</p>
+                      <p class="text-xl" id="third-card-calculation-data">b=<span id="third-card-data-1">10</span>cm,h=<span id="third-card-data-2">10</span>cm</p>
                       <div class="card-actions">
-                        <button class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
+                        <button id="btn-third" class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -119,10 +120,10 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Rhombus</h2>
-                      <p>Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> b <span><i class="fa-solid fa-xmark"></i></span> h</p>
-                      <p>d<sub>1</sub> = 16cm   d<sub>2</sub> = 8cm</p>
+                      <p class>Area (A) = <span>0.5</span>  <span><i class="fa-solid fa-xmark"></i></span> d<sub>1</sub><span><i class="fa-solid fa-xmark"></i></span> d<sub>2</sub></p>
+                      <p class="text-xl">d<sub>1</sub> = <span >16</span> cm   d<sub>2</sub> = <span>8</span> cm</p>
                       <div class="card-actions">
-                        <button class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
+                        <button id="btn-fourth" class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -161,24 +162,27 @@
             <!-- calculation part -->
             <div class="calculation-details bg-sky-500 mx-auto mt-5 w-full md:w-[25%] lg:w-[25%]">
                 <h1 class="text-3xl text-center font-bold underline ">Area Calculation</h1>
+               
                 <div class="overflow-x-auto">
-                    <table class="table-normal mx-auto">
-                      <!-- head -->
-                  
-                      <tbody>
-                        <!-- row 1 -->
-                        <tr>
-                          <th>1</th>
-                          <td>Cy Ganderton</td>
-                          <td>Quality Control Specialist</td>
-                          <td>Blue</td>
-                        </tr>
-                       
-                    
-                    
-                      </tbody>
-                    </table>
-                  </div>
+                  <table class="table w-full">
+                    <!-- head -->
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Title</th>
+                      
+                        <th>Result</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody id="table-container">
+
+                 
+                 
+                    </tbody>
+                  </table>
+                </div>
+                </div>
             </div>
 
            
