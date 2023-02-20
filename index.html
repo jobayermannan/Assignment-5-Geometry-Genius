@@ -50,21 +50,21 @@
                       <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title font-bold">Triangle</h2>
-                      <p>Area (A) = 0.5 <span><i class="fa-solid fa-xmark"></i></span> b <span><i class="fa-solid fa-xmark"></i></span> h</p>
+                      <h2 id="triangle" class="card-title font-bold">Triangle</h2>
+                      <p>Area (A) = <span id="triangle-input3">0.5 </span> <span><i class="fa-solid fa-xmark"></i></span> b <span><i class="fa-solid fa-xmark"></i></span> h</p>
                       <div  class=" block md:flex mt-2 flex-none  gap-4 lg:flex flex-none gap-4 ">
                         <div class="flex  flex-none gap-2">
-                        <input type="text" placeholder="b" class="input input input-bordered input-xs w-32 lg:w-24 max-w-xs " />
+                        <input id="triangle-input1" type="text" placeholder="b" class="input input input-bordered input-xs w-32 lg:w-24 max-w-xs " />
                         <p class="font-bold ">cm</p></div>
 
                         <div class="flex  flex-none gap-2">
                        
-                        <input type="text" id="first-field" placeholder="h" class="input input-bordered input-xs w-32 lg:w-24 max-w-xs" />
+                        <input id="triangle-input2" type="text" id="first-field" placeholder="h" class="input input-bordered input-xs w-32 lg:w-24 max-w-xs" />
                         <p class="font-bold" > cm</p>
                     </div>
                       </div>
                       <div class="card-actions">
-                        <button id="btn-triangle" class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
+                        <button id="btn-first" class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -77,21 +77,21 @@
                       <img src="./images/rectangle.png" alt="triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title font-bold" id="triangle">Rectangle</h2>
+                      <h2 class="card-title font-bold" id="rectangle">Rectangle</h2>
                       <p>Area (A) = w <span><i class="fa-solid fa-xmark"></i></span>  I </p>
                       <div  class=" block md:flex mt-2 flex-none  gap-4 lg:flex flex-none gap-4 ">
                         <div class="flex  flex-none gap-2">
-                        <input type="text" placeholder="W" class="input input input-bordered input-xs w-32 lg:w-24 max-w-xs " />
+                        <input id="rectangle-input1" type="text" placeholder="W" class="input input input-bordered input-xs w-32 lg:w-24 max-w-xs " />
                         <p class="font-bold ">cm</p></div>
 
                         <div class="flex  flex-none gap-2">
                        
-                        <input type="text" placeholder="I" class="input input-bordered input-xs w-32 lg:w-24 max-w-xs" />
+                        <input id="rectangle-input2" type="text" placeholder="I" class="input input-bordered input-xs w-32 lg:w-24 max-w-xs" />
                         <p class="font-bold" > cm</p>
                     </div>
                       </div>
                       <div class="card-actions">
-                        <button class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
+                        <button id="btn-second" class="bg-sky-500 w-64  mt-3 mx-auto  hover:bg-gray-700 text-white py-2 px-4 rounded-md focus:outline-none font-sm">Calculate</button>
                       </div>
                     </div>
                   </div>

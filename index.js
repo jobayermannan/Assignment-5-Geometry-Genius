@@ -1,3 +1,74 @@
+ let serial=0;
+
+//  for 1st  card
+document.getElementById("btn-first").addEventListener("click", function () {
+
+  serial+=1;
+  const firstCardTitle=document.getElementById("triangle").innerText;
+  const firstCardCalculationData1=document.getElementById("triangle-input1").value;
+  const firstCardCalculationData2=document.getElementById("triangle-input2").value;
+  const firstCardCalculationData3=document.getElementById("triangle-input3").innerText;
+
+  // using rhombus formula area= 0.5*d1*d2
+
+  const firstArea=parseFloat(firstCardCalculationData1)*parseFloat(firstCardCalculationData2)*parseFloat(firstCardCalculationData3);
+
+  console.log(firstCardCalculationData1,firstCardCalculationData2, firstCardCalculationData3,firstArea);
+ 
+
+
+  
+
+  if(isNaN(firstCardCalculationData1 || firstCardCalculationData2)){
+      alert("please enter a valid amount");
+      return;
+  }
+  
+if (firstCardCalculationData1,firstCardCalculationData2.trim() === "") {
+  alert("please enter a valid amount");
+  return;
+
+}
+
+  displayTheData(firstCardTitle,firstArea)
+
+})
+
+
+// second card
+document.getElementById("btn-second").addEventListener("click", function () {
+
+  serial+=1;
+  const secondCardTitle=document.getElementById("rectangle").innerText;
+  const secondCardCalculationData1=document.getElementById("rectangle-input1").value;
+  const secondCardCalculationData2=document.getElementById("rectangle-input2").value;
+
+  // using rhombus formula area= 0.5*d1*d2
+
+  const secondArea=parseFloat(secondCardCalculationData1)*parseFloat(secondCardCalculationData2);
+  console.log(secondCardTitle,secondCardCalculationData1,secondCardCalculationData2,secondArea);
+ 
+
+
+  
+
+  if(isNaN(secondCardCalculationData1 || secondCardCalculationData2)){
+      alert("please enter a valid amount");
+      return;
+  }
+  
+if (secondCardCalculationData1,secondCardCalculationData2.trim() === "") {
+  alert("please enter a valid amount");
+  return;
+
+}
+
+  displayTheData(secondCardTitle,secondArea)
+
+})
+
+
+
 
 
 
@@ -5,7 +76,8 @@
   document.getElementById("btn-third").addEventListener("click", function () {
         
 //    get the data  from html using id
-   
+serial+=1;
+
     const thirdCardTitle=document.getElementById("third-card-title").innerText;
     
     
@@ -23,24 +95,15 @@ displayTheData(thirdCardTitle,area);
     
 
   });
-  // const FirstCard= document.getElementById("first-field").value;
-    // console.log("first-cardTitle");
-    // console.log("triangle");
-    // const tableContainer=document.getElementById("table-container");
-    // const tr=document.createElement("tr");
-    // tr.innerHTML = 
-    // '<td>1</td>'
-    // '<td>Triangle</td>'
-    // '<td>${12cm²}</td>'
-    // '<td><button>${Convert to m²}</button></td>'
-    // ;
-    //   tableContainer.appendChild(tr);
 
 
      
   //  creating object from browser with event
-
+//  for 4th card
       document.getElementById("btn-fourth").addEventListener("click", function (e) {
+
+        serial+=1;
+
         const fourthCardTitle=e.target.parentNode.parentNode.children[0].innerText;
         const fourthCardCalculationData1=e.target.parentNode.parentNode.children[2].children[1].innerText;
         const fourthCardCalculationData2=e.target.parentNode.parentNode.children[2].children[3].innerText;
@@ -53,13 +116,15 @@ displayTheData(thirdCardTitle,area);
       
       })
      
-
+//  for 5th card 
       document.getElementById("btn-fifth").addEventListener("click", function (e) {
+
+        serial+=1;
         const fifthCardTitle=e.target.parentNode.parentNode.children[0].innerText;
         const fifthCardCalculationData1=e.target.parentNode.parentNode.children[2].children[0].innerText;
         const fifthCardCalculationData2=e.target.parentNode.parentNode.children[2].children[1].innerText;
 
-        // using rhombus formula area= 0.5*d1*d2
+        //using pentagon formula   area= 0.5*p*b
         const formulaValue=e.target.parentNode.parentNode.children[1].children[0].innerText;
         const fifthArea= parseFloat(formulaValue)*parseFloat(fifthCardCalculationData1)*parseFloat(fifthCardCalculationData2);
 
@@ -67,12 +132,18 @@ displayTheData(thirdCardTitle,area);
         displayTheData(fifthCardTitle,fifthArea)
       
       });
+
+      //  for sixth card
+
       document.getElementById("btn-sixth").addEventListener("click", function (e) {
+
+        serial+=1;
+
         const sixthCardTitle=e.target.parentNode.parentNode.children[0].innerText;
         const sixthCardCalculationData1=e.target.parentNode.parentNode.children[2].children[0].innerText;
         const sixthCardCalculationData2=e.target.parentNode.parentNode.children[2].children[1].innerText;
 
-        // using rhombus formula area= 0.5*d1*d2
+        // using Ellipse formula area= 3.1416*a*b
         const formulaValue=e.target.parentNode.parentNode.children[1].children[0].innerText;
         const sixthArea= parseFloat(formulaValue)*parseFloat(sixthCardCalculationData1)*parseFloat(sixthCardCalculationData2);
 
@@ -111,7 +182,7 @@ displayTheData(thirdCardTitle,area);
     tr.innerHTML = 
 
     `
-    <td> ${1}</td>
+    <td> ${serial}</td>
   
       <td>${CardTitle}</td>
       
