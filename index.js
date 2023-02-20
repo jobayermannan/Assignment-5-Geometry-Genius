@@ -49,10 +49,24 @@ displayTheData(thirdCardTitle,area);
         const formulaValue=e.target.parentNode.parentNode.children[1].children[0].innerText;
         const fourthArea= parseFloat(formulaValue)*parseFloat(fourthCardCalculationData1)*parseFloat(fourthCardCalculationData2);
 
-        console.log( fourthCardTitle,fourthCardCalculationData1,fourthCardCalculationData2,formulaValue,fourthArea);
         displayTheData(fourthCardTitle,fourthArea)
       
       })
+     
+
+      document.getElementById("btn-fifth").addEventListener("click", function (e) {
+        const fifthCardTitle=e.target.parentNode.parentNode.children[0].innerText;
+        const fifthCardCalculationData1=e.target.parentNode.parentNode.children[2].children[0].innerText;
+        const fifthCardCalculationData2=e.target.parentNode.parentNode.children[2].children[1].innerText;
+
+        // using rhombus formula area= 0.5*d1*d2
+        const formulaValue=e.target.parentNode.parentNode.children[1].children[0].innerText;
+        const fifthArea= parseFloat(formulaValue)*parseFloat(fifthCardCalculationData1)*parseFloat(fifthCardCalculationData2);
+
+       console.log(fifthCardTitle,fifthCardCalculationData1,fifthCardCalculationData2,formulaValue,fifthArea)
+        displayTheData(fifthCardTitle,fifthArea)
+      
+      });
      
 
 
