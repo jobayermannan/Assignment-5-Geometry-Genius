@@ -67,6 +67,19 @@ displayTheData(thirdCardTitle,area);
         displayTheData(fifthCardTitle,fifthArea)
       
       });
+      document.getElementById("btn-sixth").addEventListener("click", function (e) {
+        const sixthCardTitle=e.target.parentNode.parentNode.children[0].innerText;
+        const sixthCardCalculationData1=e.target.parentNode.parentNode.children[2].children[0].innerText;
+        const sixthCardCalculationData2=e.target.parentNode.parentNode.children[2].children[1].innerText;
+
+        // using rhombus formula area= 0.5*d1*d2
+        const formulaValue=e.target.parentNode.parentNode.children[1].children[0].innerText;
+        const sixthArea= parseFloat(formulaValue)*parseFloat(sixthCardCalculationData1)*parseFloat(sixthCardCalculationData2);
+
+       console.log(sixthCardTitle,sixthCardCalculationData1,sixthCardCalculationData2,formulaValue,sixthArea)
+        displayTheData(sixthCardTitle,sixthArea)
+      
+      });
      
 
 
