@@ -31,8 +31,7 @@ document.getElementById("btn-first").addEventListener("click", function () {
   const firstCardCalculationData1=document.getElementById("triangle-input1").value;
   const firstCardCalculationData2=document.getElementById("triangle-input2").value;
   const firstCardCalculationData3=document.getElementById("triangle-input3").innerText;
-  firstCardCalculationData1.value="";
-  firstCardCalculationData2.value="";
+
   // using rhombus formula area= 0.5*d1*d2
 
   const firstArea=parseFloat(firstCardCalculationData1)*parseFloat(firstCardCalculationData2)*parseFloat(firstCardCalculationData3);
@@ -43,10 +42,9 @@ document.getElementById("btn-first").addEventListener("click", function () {
 
   
 
-  if(isNaN(firstCardCalculationData1 || firstCardCalculationData2,firstCardCalculationData2 || firstCardCalculationData1)){
+  if(isNaN(firstCardCalculationData1 || firstCardCalculationData2)){
       alert("please enter a valid amount");
-      firstCardCalculationData1.value="";
-      firstCardCalculationData2.value="";
+  
       return;
   }
   
