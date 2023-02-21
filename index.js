@@ -1,4 +1,27 @@
- let serial=0;
+
+document.getElementById("blog-btn").addEventListener("click", function () {
+  window.location.href="blog.html"
+})
+
+function getRandomColor(){
+  document.body.style.backgroundColor=
+  'rgb('+Math.random()*255+
+  ','+Math.random()*255+','
+  +Math.random()*255+')';
+  
+}
+
+
+document.getElementById("card-sec").addEventListener("mouseenter", function () {
+  const neWColor=document.getElementById("card-sec").innerHTML;
+  getRandomColor(neWColor);
+
+
+})
+
+
+let serial=0;
+
 
 //  for 1st  card
 document.getElementById("btn-first").addEventListener("click", function () {
@@ -8,7 +31,8 @@ document.getElementById("btn-first").addEventListener("click", function () {
   const firstCardCalculationData1=document.getElementById("triangle-input1").value;
   const firstCardCalculationData2=document.getElementById("triangle-input2").value;
   const firstCardCalculationData3=document.getElementById("triangle-input3").innerText;
-
+  firstCardCalculationData1.value="";
+  firstCardCalculationData2.value="";
   // using rhombus formula area= 0.5*d1*d2
 
   const firstArea=parseFloat(firstCardCalculationData1)*parseFloat(firstCardCalculationData2)*parseFloat(firstCardCalculationData3);
@@ -19,8 +43,10 @@ document.getElementById("btn-first").addEventListener("click", function () {
 
   
 
-  if(isNaN(firstCardCalculationData1 || firstCardCalculationData2)){
+  if(isNaN(firstCardCalculationData1 || firstCardCalculationData2,firstCardCalculationData2 || firstCardCalculationData1)){
       alert("please enter a valid amount");
+      firstCardCalculationData1.value="";
+      firstCardCalculationData2.value="";
       return;
   }
   
