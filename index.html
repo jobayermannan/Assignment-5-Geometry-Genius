@@ -42,12 +42,12 @@
 
             <!-- card part  -->
 
-            <!-- card-1 -->
+            <!-- card- -->
 
-            <div id="card-sec" class="card-element  w-full md:w-[75%] lg:w-[75%]   mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div   class="card card-compact w-full  bg-base-100  shadow-xl " >
+            <div class="card-element   w-full md:w-[75%] lg:w-[75%]   mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div onmouseover="getRandomColor()"   onmouseout="changeColor()"   id="card-color1"  class="card-mouse" class="card  card-compact w-full  bg-base-100  shadow-xl " >
                     <figure class="px-10 pt-10">
-                      <img   src="./images/triangle.png" alt="triangle" class="rounded-xl " />
+                      <img  class="mx-auto"    src="./images/triangle.png" alt="triangle" class="rounded-xl " />
                     </figure>
                     <div  class="card-body items-center text-center ">
                       <h2 id="triangle" class="card-title font-bold">Triangle</h2>
@@ -72,11 +72,11 @@
 
                   <!-- card-2 -->
 
-                  <div class="card card-compact w-full  bg-base-100 shadow-xl " >
+                  <div  onmouseover="getRandomColor()"   onmouseout="changeColor()"   id="card-color2"   class="card  card-compact w-full  bg-base-100 shadow-xl " >
                     <figure class="px-10 pt-10">
-                      <img src="./images/rectangle.png" alt="triangle" class="rounded-xl" />
+                      <img  class="mx-auto" class=" mx-auto" src="./images/rectangle.png" alt="triangle" class="rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center">
+                    <div  class="card-body items-center text-center">
                       <h2 class="card-title font-bold" id="rectangle">Rectangle</h2>
                       <p>Area (A) = w <span><i class="fa-solid fa-xmark"></i></span>  I </p>
                       <div  class=" block md:flex mt-2 flex-none  gap-4 lg:flex flex-none gap-4 ">
@@ -98,9 +98,9 @@
 
                   <!-- card-3 -->
 
-                <div class="card card-compact w-full bg-base-100 shadow-xl " >
+                <div onmouseover="getRandomColor()"   onmouseout="changeColor()"   id="card-color3" class="card card-compact w-full bg-base-100 shadow-xl " >
                     <figure class="px-10 pt-10">
-                      <img src="./images/parallelogram.png" alt="triangle" class="rounded-xl" />
+                      <img  class="mx-auto" src="./images/parallelogram.png" alt="triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 id="third-card-title" class="card-title font-bold">Parallelogram</h2>
@@ -114,11 +114,11 @@
 
                   <!-- card-4 -->
 
-                <div class="card card-compact w-full bg-base-100 shadow-xl " >
+                <div onmouseover="getRandomColor()"   onmouseout="changeColor()"   id="card-color4" class="card card-compact w-full bg-base-100 shadow-xl " >
                     <figure class="px-10 pt-10">
-                      <img src="./images/rhombus.png" alt="Rhombus" class="rounded-xl" />
+                      <img  class="mx-auto" src="./images/rhombus.png" alt="Rhombus" class="rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center">
+                    <div    class="card-body items-center text-center">
                       <h2 class="card-title font-bold">Rhombus</h2>
                       <p class>Area (A) = <span>0.5</span>  <span><i class="fa-solid fa-xmark"></i></span> d<sub>1</sub><span><i class="fa-solid fa-xmark"></i></span> d<sub>2</sub></p>
                       <p class="text-xl">d<sub>1</sub> = <span >16</span> cm   d<sub>2</sub> = <span>8</span> cm</p>
@@ -129,11 +129,11 @@
                   </div>
 
                   <!-- card-5 -->
-                <div class="card card-compact w-full bg-base-100 shadow-xl " >
+                <div onmouseover="getRandomColor()"   onmouseout="changeColor()"   id="card-color5" class="card card-compact w-full bg-base-100 shadow-xl " >
                     <figure class="px-10 pt-10">
-                      <img src="./images/pentagon.png" alt="Pentagon" class="rounded-xl" />
+                      <img  class="mx-auto" src="./images/pentagon.png" alt="Pentagon" class="rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center">
+                    <div   class="card-body items-center text-center">
                       <h2 class="card-title font-bold">Pentagon</h2>
                       <p>Area (A) = <span>0.5</span>  <span><i class="fa-solid fa-xmark"></i></span> p <span><i class="fa-solid fa-xmark"></i></span> b</p>
                       <p class="text-xl">p = <span>6</span> cm, b = <span>10</span> cm</p>
@@ -145,11 +145,11 @@
 
                   <!-- card-6 -->
 
-                <div class="card card-compact w-full bg-base-100 shadow-xl " >
+                <div onmouseover="getRandomColor()"   onmouseout="changeColor()"   id="card-color6"class="card card-compact  w-full bg-base-100 shadow-xl " >
                     <figure class="px-10 pt-10">
-                      <img src="./images/ellipse.png" alt="Ellipse" class="rounded-xl" />
+                      <img  class="mx-auto" src="./images/ellipse.png" alt="Ellipse" class="rounded-xl" />
                     </figure>
-                    <div class="card-body items-center text-center">
+                    <div  class="card-body  items-center text-center">
                       <h2 class="card-title font-bold">Ellipse</h2>
                       <p>Area(A)=π<span hidden >3.1416</span> a b</p>
                       <p class="text-xl">a =  <span>10</span> cm, b = <span>4</span> cm</p>
@@ -172,6 +172,7 @@
                         <th>Title</th>
                       
                         <th>Result</th>
+                        <th>buttons</th>
                         
                       </tr>
                     </thead>

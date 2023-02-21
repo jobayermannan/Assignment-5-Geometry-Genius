@@ -3,21 +3,54 @@ document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href="blog.html"
 })
 
+// function getRandomColor(){
+//   const friends=document.getElementById("change-color")
+//   for (const friend of friends){
+//     friend.style.backgroundColor=
+//   'rgb('+Math.random()*255+
+//   ','+Math.random()*255+','
+//   +Math.random()*255+')';
+  
+//   }
+
+  
+// }
 function getRandomColor(){
-  document.body.style.backgroundColor=
+  const changeColor6=document.getElementById("card-color6")
+  const changeColor5=document.getElementById("card-color5")
+  const changeColor4=document.getElementById("card-color4")
+  const changeColor3=document.getElementById("card-color3")
+  const changeColor2=document.getElementById("card-color2")
+  const changeColor1=document.getElementById("card-color1")
+  
+  changeColor6.style.backgroundColor=changeColor5.style.backgroundColor=
+  changeColor4.style.backgroundColor=changeColor3.style.backgroundColor=
+  changeColor2.style.backgroundColor=changeColor1.style.backgroundColor=
   'rgb('+Math.random()*255+
   ','+Math.random()*255+','
   +Math.random()*255+')';
   
+  
+
+
+
+
+   }
+
+function changeColor() {
+  const textWhite6=document.getElementById("card-color6")
+  const textWhite5=document.getElementById("card-color5")
+  const textWhite4=document.getElementById("card-color4")
+  const textWhite3=document.getElementById("card-color3")
+  const textWhite2=document.getElementById("card-color2")
+  const textWhite1=document.getElementById("card-color1")
+  
+  textWhite6.style.backgroundColor=textWhite5.style.backgroundColor="white";
+  textWhite4.style.backgroundColor=textWhite3.style.backgroundColor="white";
+  textWhite2.style.backgroundColor=textWhite1.style.backgroundColor="white";
+  
+ 
 }
-
-
-document.getElementById("card-sec").addEventListener("mouseenter", function () {
-  const neWColor=document.getElementById("card-sec").innerHTML;
-  getRandomColor(neWColor);
-
-
-})
 
 
 let serial=0;
@@ -211,6 +244,7 @@ displayTheData(thirdCardTitle,area);
       <td>${CardTitle}</td>
       
       <td>${resultCard} ${unit}</td>
+      <td><button class="btn btn-sm border-none bg-sky-500"> Convert M<sup>2</sup></button></td>
  `;
       
     
@@ -228,4 +262,5 @@ displayTheData(thirdCardTitle,area);
   
     
     };
+  
    
