@@ -3,54 +3,72 @@ document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href="blog.html"
 })
 
-// function getRandomColor(){
-//   const friends=document.getElementById("change-color")
-//   for (const friend of friends){
-//     friend.style.backgroundColor=
-//   'rgb('+Math.random()*255+
-//   ','+Math.random()*255+','
-//   +Math.random()*255+')';
-  
-//   }
-
-  
-// }
-function getRandomColor(){
-  const changeColor6=document.getElementById("card-color6")
-  const changeColor5=document.getElementById("card-color5")
-  const changeColor4=document.getElementById("card-color4")
-  const changeColor3=document.getElementById("card-color3")
-  const changeColor2=document.getElementById("card-color2")
-  const changeColor1=document.getElementById("card-color1")
-  
-  changeColor6.style.backgroundColor=changeColor5.style.backgroundColor=
-  changeColor4.style.backgroundColor=changeColor3.style.backgroundColor=
-  changeColor2.style.backgroundColor=changeColor1.style.backgroundColor=
-  'rgb('+Math.random()*255+
-  ','+Math.random()*255+','
-  +Math.random()*255+')';
-  
-  
 
 
 
 
-   }
+const changeColor1 = document.getElementById('color-card-1');
+changeColor1.addEventListener('mouseover', function() {
+  //  another way to generate random number  const randomColor = Math.floor(Math.random()*16777215).toString(16); 
+   changeColor1.style.backgroundColor =    'rgb('+Math.random()*255+
+     ','+Math.random()*255+','
+     +Math.random()*255+')';
+     changeColor1.addEventListener ('mouseout', function() {
+      changeColor1.style.backgroundColor = 'white';
+});
+   
+ });
 
-function changeColor() {
-  const textWhite6=document.getElementById("card-color6")
-  const textWhite5=document.getElementById("card-color5")
-  const textWhite4=document.getElementById("card-color4")
-  const textWhite3=document.getElementById("card-color3")
-  const textWhite2=document.getElementById("card-color2")
-  const textWhite1=document.getElementById("card-color1")
+
+
+
+const changeColor2 = document.getElementById('color-card-2');
+changeColor2.addEventListener('mouseover', function() {
+   const randomColor = Math.floor(Math.random()*16777215).toString(16); 
+   changeColor2.style.backgroundColor = "#" + randomColor; 
+   changeColor2.addEventListener ('mouseout', function() {
+    changeColor2.style.backgroundColor = 'white';
+});
+   
+ });
+const changeColor3 = document.getElementById('color-card-3');
+changeColor3.addEventListener('mouseover', function() {
+   const randomColor = Math.floor(Math.random()*16777215).toString(16); 
+   changeColor3.style.backgroundColor = "#" + randomColor; 
+   changeColor3.addEventListener ('mouseout', function() {
+    changeColor3.style.backgroundColor = 'white';
+});
+   
+ });
+const changeColor4 = document.getElementById('color-card-4');
+changeColor4.addEventListener('mouseover', function() {
+   const randomColor = Math.floor(Math.random()*16777215).toString(16); 
+   changeColor4.style.backgroundColor = "#" + randomColor; 
+   changeColor4.addEventListener ('mouseout', function() {
+   changeColor4.style.backgroundColor = 'white';
   
-  textWhite6.style.backgroundColor=textWhite5.style.backgroundColor="white";
-  textWhite4.style.backgroundColor=textWhite3.style.backgroundColor="white";
-  textWhite2.style.backgroundColor=textWhite1.style.backgroundColor="white";
-  
- 
-}
+});
+   
+ });
+const changeColor5 = document.getElementById('color-card-5');
+changeColor5.addEventListener('mouseover', function() {
+   const randomColor = Math.floor(Math.random()*16777215).toString(16); 
+   changeColor5.style.backgroundColor = "#" + randomColor; 
+   changeColor5.addEventListener ('mouseout', function() {
+   changeColor5.style.backgroundColor = 'white';
+});
+   
+ });
+const changeColor6 = document.getElementById('color-card-6');
+changeColor6.addEventListener('mouseover', function() {
+   const randomColor = Math.floor(Math.random()*16777215).toString(16); 
+   changeColor6.style.backgroundColor = "#" + randomColor; 
+   changeColor6.addEventListener ('mouseout', function() {
+   changeColor6.style.backgroundColor = 'white';
+});
+   
+ });
+
 
 
 let serial=0;
@@ -244,7 +262,7 @@ displayTheData(thirdCardTitle,area);
       <td>${CardTitle}</td>
       
       <td>${resultCard} ${unit}</td>
-      <td><button class="btn btn-sm border-none bg-sky-500"> Convert M<sup>2</sup></button></td>
+      <td><button class="btn btn-call btn-sm border-none bg-sky-500"> Convert M<sup>2</sup></button></td>
  `;
       
     
